@@ -2,10 +2,10 @@
 /*  MUDE A COR DE FUNDO AQUI (Missão 1.3)                */
 /* ===================================================== */
 :root {
-  --cor-fundo: #f4f4f9;
-  --cor-destaque: #4f46e5;
-  --cor-texto: #1f2937;
-  --cor-card: #ffffff;
+  --cor-fundo: #18181b;
+  --cor-destaque: #818cf8;
+  --cor-texto: #e4e4e7;
+  --cor-card: #27272a;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
