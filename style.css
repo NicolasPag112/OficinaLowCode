@@ -11,7 +11,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: var(--cor-fundo);
   color: var(--cor-texto);
   line-height: 1.6;
@@ -37,12 +37,33 @@ section h2 {
 }
 
 /* Habilidades */
-.habilidades-lista { display: flex; flex-wrap: wrap; gap: 12px; }
-.habilidades-lista span {
-  background: var(--cor-destaque); color: #fff;
-  padding: 8px 16px; border-radius: 20px; font-size: 0.9rem;
+.habilidades-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
+.habilidades-lista span {
+  background: var(--cor-destaque);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+
+  /* Animação suave */
+  transition: background-color 0.3s ease,
+              transform 0.3s ease,
+              box-shadow 0.3s ease;
+
+  cursor: default;
+}
+
+/* Efeito ao passar o mouse */
+.habilidades-lista span:hover {
+  background-color: #3730a3;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(55, 48, 163, 0.4);
+}
 /* Projetos */
 .projetos-grid {
   display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;
